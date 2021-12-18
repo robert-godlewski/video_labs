@@ -5,74 +5,65 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>VideoLab</title>
-        <!-- For External CSS files
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>-->
-        <!-- For Internal CSS in HTML -->
-        <style>
-            /* Testing CSS natively */
-            * {
-                outline: 0;
-                padding: 0;
-                margin: 0;
-                border: 0;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
     </head>
     <body>
         <header>
-            <div><!--Purple Strip at the top--></div>
-            <h1>VideoLab</h1>
-            <input type="search" placeholder="Search">
-            <button>Login</button>
+            <div id="purplebar"><!--Purple Strip at the top--></div>
+            <div id="blackbar">
+                <h1>VideoLab</h1>
+                <input type="search" placeholder="Search">
+                <button>Login</button>
+            </div>
         </header>
-        <div>
+        <div class="left">
             <!--Main Video Area-->
-            <video controls>
-                <source src="video/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
+            <video controls id="main-vid">
+                <source src="videos/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div>
+            <div id="vid-details">
                 <!--Video details-->
                 <h2>Pexels Ekaterina Bolovtsova</h2>
                 <p>1.3K views | June 18, 2021</p>
             </div>
             <button>Subscribe</button>
-            <div>
-                <img src="#" alt="user icon">
+            <div id="user">
+                <img src="images/user-circle.png" alt="user icon">
                 <p>User name</p>
             </div>
         </div>
-        <div>
+        <div class="right">
             <!--Other videos-->
             <div>
                 <h3>Up Next</h3>
-                <hr>
+                <div id="line"><!--Black line--></div>
             </div>
             <div>
-                <div>
+                <div class="video-groups">
                     <video controls>
-                        <source src="video/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
+                        <source src="#" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <p>Not a Rick Roll</p>
                 </div>
-                <div>
+                <div class="video-groups">
                     <video controls>
-                        <source src="video/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
+                        <source src="#" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <p>10 Facts About ET's Cat</p>
                 </div>
-                <div>
+                <div class="video-groups">
                     <video controls>
-                        <source src="video/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
+                        <source src="#" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <p>5 Cosplay Tips</p>
                 </div>
-                <div>
+                <div class="video-groups">
                     <video controls>
-                        <source src="video/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
+                        <source src="#" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <p>Boy Battles Dinobot in Thunderdome</p>
