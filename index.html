@@ -1,81 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VideoLab</title>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
-    </head>
-    <body>
-        <header>
-            <div id="purplebar"><!--Purple Strip at the top--></div>
-            <div id="blackbar">
-                <h1>VideoLab</h1>
-                <input type="search" placeholder="Search">
-                <button>Login</button>
-            </div>
-        </header>
-        <div class="left">
-            <!--Main Video Area-->
-            <video controls id="main-vid">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="flex-container">
+        <!-- left column -->
+        <div class="col-l">
+            <!-- this is a placeholder replace it with a real video
+            <figure class="placeholder">
+                <svg style="text-anchor:middle;" width="720" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect>
+                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
+                </svg>
+            </figure>-->
+            <!-- <video controls id="main-vid"> -->
+            <video controls class="placeholder"> 
                 <source src="videos/pexels-ekaterina-bolovtsova-5703372.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div id="vid-details">
-                <!--Video details-->
-                <h2>Pexels Ekaterina Bolovtsova</h2>
-                <p>1.3K views | June 18, 2021</p>
-            </div>
-            <button>Subscribe</button>
-            <div id="user">
-                <img src="images/user-circle.png" alt="user icon">
-                <p>User name</p>
-            </div>
-        </div>
-        <div class="right">
-            <!--Other videos-->
-            <div>
-                <h3>Up Next</h3>
-                <div id="line"><!--Black line--></div>
-            </div>
-            <div>
-                <div class="video-groups">
-                    <video controls>
-                        <source src="#" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Not a Rick Roll</p>
+            <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1>Example Video Title</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user">
+                        <img src="images/user.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Example User Name</span>
+                    </div>
                 </div>
-                <div class="video-groups">
-                    <video controls>
-                        <source src="#" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>10 Facts About ET's Cat</p>
-                </div>
-                <div class="video-groups">
-                    <video controls>
-                        <source src="#" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>5 Cosplay Tips</p>
-                </div>
-                <div class="video-groups">
-                    <video controls>
-                        <source src="#" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Boy Battles Dinobot in Thunderdome</p>
-                </div>
+                <button class="btn">Subscribe</button>
             </div>
         </div>
-        <!-- For JavaScript usually on the bottom - Using a script
-        <script src="js/script.js"></script>-->
-        <!--Natively in the html-->
-        <script>
-            //Testing JavaScript natively
-            console.log("Hello World");
-        </script>
-    </body>
+        <!-- right column -->
+        <div class="col-r">
+            <h3 class="sub-header">Up Next</h3>
+            <div class="video-small">
+                <img src="images/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <span class="video-title">Not a Rick Roll</span>
+            </div>
+            <div class="video-small">
+                <img src="images/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <span class="video-title">10 Facts About ET's Cat!</span>
+            </div>
+            <div class="video-small">
+                <img src="images/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <span class="video-title">5 Cosplay Tips</span>
+            </div>
+            <div class="video-small">
+                <img src="images/video-placeholder.png" alt="video placeholder" class="vid-s">
+                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
